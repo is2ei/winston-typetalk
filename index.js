@@ -1,4 +1,6 @@
+var util = require('util');
 var request = require('request');
+var winston = require('winston');
 var format = require('sf');
 
 /**
@@ -32,6 +34,17 @@ var Typetalk = exports.Typetalk = function (options) {
     this.batchedMessages = [];
     this.batchingTimeout = 0;
 };
+
+/**
+ * @extends winston.Transport
+ */
+util.inherits(Typetalk, winston.Transport);
+
+/**
+ * Define a getter so that `winston.transports.Typetalk`
+ * is available and thus backwards compatible.
+ */
+winston.transports.Typetalk = Typetalk;
 
 /**
  * Expose the name of this Transport on the prototype
