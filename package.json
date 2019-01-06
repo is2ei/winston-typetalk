@@ -1,7 +1,7 @@
 {
     "name": "winston-typetalk",
     "description": "A Typetalk transport for winston",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "author": "Issei Horie",
     "repository": {
         "type": "git",
