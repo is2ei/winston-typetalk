@@ -24,7 +24,7 @@
         "jasmine-node": "^1.14.5",
         "winston": ""
     },
-    "main": "./index.js",
+    "main": "./lib/winston-typetalk",
     "scripts": {
         "lint": "./node_modules/eslint/bin/eslint.js .",
         "test": "./node_modules/.bin/jasmine-node index.spec.js"
