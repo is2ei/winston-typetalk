@@ -1,8 +1,10 @@
 winston-typetalk
 ===
 
+[![Coverage Status](https://coveralls.io/repos/github/is2ei/winston-typetalk/badge.svg?branch=master)][coveralls]
 [![npm version](https://badge.fury.io/js/winston-typetalk.svg)][npm]
 
+[coveralls]: https://coveralls.io/github/is2ei/winston-typetalk?branch=master
 [npm]: https://badge.fury.io/js/winston-typetalk
 
 A Typetalk transport for winston inspired by [ivanmarban/winston-telegram](https://github.com/ivanmarban/winston-telegram).
