@@ -1,5 +1,5 @@
 # winston-typetalk
-Typetalk integration for Winston inspired by [meerkats/winston-slacker](https://github.com/meerkats/winston-slacker)
+A Typetalk transport for winston inspired by [ivanmarban/winston-telegram](https://github.com/ivanmarban/winston-telegram).
 
 ## Install
 
@@ -10,12 +10,10 @@ $ npm install winston-typetalk
 ## Usage
 
 ```javascript
-var winston = require('windton');
+const logger = require('winston');
+const typetalkLogger = require('winston-typetalk');
 
-var winstonTypetalk = require('winston-typetalk');
-var options = {
-    topic: 12345,
-    token: "XXXXXX"
-};
-winston.add(winstonTypetalk, options);
+logger.add(new typetalkLogger({token: YOUR_TYPETALK_ACCESS_TOKEN, topicId: TOPID_ID}));
+
+logger.info('Hello, world!');
 ```
