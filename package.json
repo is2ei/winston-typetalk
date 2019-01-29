@@ -33,7 +33,7 @@
         "lint": "node_modules/eslint/bin/eslint.js .",
         "test": "node_modules/.bin/mocha test/*.test.js",
         "coverage": "node_modules/.bin/nyc node_modules/.bin/mocha test/*.test.js",
-        "report-coverage": "node_modules/.bin/nyc node_modules/.bin/mocha && nyc report --reporter=text-lcov | coveralls"
+    "report-coverage": "node_modules/.bin/nyc node_modules/.bin/mocha && nyc report --reporter=text-lcov | coveralls"
     },
     "engines": {
         "node": ">= 0.10.0"

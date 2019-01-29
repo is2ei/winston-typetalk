@@ -1,9 +1,11 @@
 winston-typetalk
 ===
 
+[![Build Status](https://travis-ci.org/is2ei/winston-typetalk.svg?branch=master)][travis]
 [![Coverage Status](https://coveralls.io/repos/github/is2ei/winston-typetalk/badge.svg?branch=master)][coveralls]
 [![npm version](https://badge.fury.io/js/winston-typetalk.svg)][npm]
 
+[travis]: https://travis-ci.org/is2ei/winston-typetalk
 [coveralls]: https://coveralls.io/github/is2ei/winston-typetalk?branch=master
 [npm]: https://badge.fury.io/js/winston-typetalk
 
