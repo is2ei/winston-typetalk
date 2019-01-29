@@ -1,4 +1,10 @@
-# winston-typetalk
+winston-typetalk
+===
+
+[![npm version](https://badge.fury.io/js/winston-typetalk.svg)][npm]
+
+[npm]: https://badge.fury.io/js/winston-typetalk
+
 A Typetalk transport for winston inspired by [ivanmarban/winston-telegram](https://github.com/ivanmarban/winston-telegram).
 
 ## Install
