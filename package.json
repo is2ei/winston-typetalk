@@ -16,18 +16,21 @@
         "bot"
     ],
     "dependencies": {
-        "request": "^2.81.0",
-        "sf": "^0.1.9"
+        "request": "^2.88.0",
+        "sf": "^0.2.0"
     },
     "devDependencies": {
-        "eslint": "^1.5.1",
-        "jasmine-node": "^1.14.5",
-        "winston": ""
+        "eslint": "^5.12.1",
+        "nyc": "^13.1.0",
+        "mocha": "^5.2.0",
+        "winston": "^3.2.0"
     },
-    "main": "./lib/winston-typetalk",
+    "main": "./lib/typetalk",
     "scripts": {
-        "lint": "./node_modules/eslint/bin/eslint.js .",
-        "test": "./node_modules/.bin/jasmine-node index.spec.js"
+        "lint": "node_modules/eslint/bin/eslint.js .",
+        "test": "node_modules/.bin/mocha test/*.test.js",
+        "coverage": "node_modules/.bin/nyc node_modules/.bin/mocha test/*.test.js",
+        "report-coverage": "node_modules/.bin/nyc node_modules/.bin/mocha nyc report --reporter=text-lcov | coveralls"
     },
     "engines": {
         "node": ">= 0.10.0"
